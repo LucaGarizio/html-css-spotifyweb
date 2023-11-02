@@ -9,7 +9,7 @@ body{
     background-color: #333;
 } 
 
-
+/* macroarea */
 #upper-part{
     height: calc(100vh - 100px);
     display: flex;
@@ -17,9 +17,10 @@ body{
 }
 
 #side-bar{
-    width: 250px;
+    width: 16rem;
     height: 100%;
     border: 1px solid white ;
+    background-color: #000000;
 }
 
 #main-content{
@@ -34,4 +35,70 @@ body{
     border: 1px solid blue;
 }
 
+/* side-bar */
+.sidebar-col{
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
 
+.logo{
+    width: 150px;
+}
+
+.sidebar-col a{
+    color: white;
+    text-decoration: none;
+    color: #606060;
+    
+}
+
+.sidebar-col li{
+    margin: 20px 0;
+}
+
+.sidebar-col ul{
+    list-style: none;
+}
+
+.fa-house,.fa-magnifying-glass,.fa-lines-leaning{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.fa-plus{
+    background-color: #a3a3a3;
+    padding: 10px;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.sidebar-col .active{
+    color: #d9d9d9;
+}
+
+.sidebar-col h3{
+    color: #fefefe;
+}
+
+.sidebar-col.bottom{
+    margin-top: 7rem;
+    margin-right: 20px;
+    color: #a3a3a3;
+    
+}
+
+.bottom hr{
+    margin: 10px 0;
+}
+
+.fa-circle-down{
+    margin-right: 10px;
+}
+
+.fa-circle-user{
+    color: #808080;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+/* main content */
