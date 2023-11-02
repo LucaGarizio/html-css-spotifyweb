@@ -14,13 +14,16 @@
     <title>Spotify Player</title>
 </head>
 <body>
-    <div id="upper-part">
+    <div id="upper-part"> 
         <div id="side-bar">
+            <div class="border">
+                
+            </div>
             <div class="sidebar-col logo">
                 <a href=""><img src="spotify/img/logo.svg" alt="Logo"></a>
             </div>
 
-            <div class="sidebar-col border">
+            <div class="sidebar-col">
                 <ul>
                     <li>
                         <a class="active" href=""><i class="fa-solid fa-house"></i>Home</a>
@@ -193,27 +196,43 @@
         </div>   
     </div>
 
-    <!-- Main content section -->
-
-
     <!-- lower part section -->
     <div id="lower-part">
         <div class="col-3">
-            
-        </div>
-
-        <div class="col-3">
-            <div class="btn-player">
-                
+            <img src="spotify/img/sinister.jpeg" alt="preview">
+            <div class="text">
+                <h5>Sinister</h5>
+                <h6>Brano nome</h>
             </div>
-
-            <div class="bar-player">
-
+            <div class="col-3-icons">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
             </div>
         </div>
 
+        <div class="col-3-player">
+            <div class="btn-player-icons mb-1">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-arrow-rotate-right"></i>
+            </div>
+
+            <div class="bar-player flex">
+                <span>0.25</span>
+                <input class="width" type="range">
+                <span>4.35</span>
+            </div>
+        </div>
+
         <div class="col-3">
-            
+            <div class="btn-player-icons">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>  
+                <input type="range">
+            </div>      
         </div>
     </div>
 
