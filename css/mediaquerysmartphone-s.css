@@ -1,3 +1,9 @@
-@media all and (mid-width: 639px){
-    
+@media all and (max-width: 639px){
+
+    .col-6{
+        width: calc(100% / 2);
+    }
+
+   
+
 }

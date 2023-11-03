@@ -10,77 +10,103 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mediaquerytablet-md.css">
     <link rel="stylesheet" href="css/mediaquerysmartphone-s.css">
-    <link rel="stylesheet" href="css/mediaquerysmallsmartphone-xs.css">
+    <link rel="stylesheet" href="css/mediaquerysmalls-xs.css">
     <title>Spotify Player</title>
 </head>
 <body>
-    <div id="upper-part"> 
+
+    <!-- desktop first -->
+    <div id="upper-part">         
         <div id="side-bar">
-            <div class="border">
-                
-            </div>
-            <div class="sidebar-col logo">
-                <a href=""><img src="spotify/img/logo.svg" alt="Logo"></a>
-            </div>
+            <div class="sidebar-container">
+                <div class="logo">
+                 <a class="show" href="#"><img src="spotify/img/logo.svg" alt=""></a>
+                 <a class="hidden" href="#"><img src="spotify/img/logo-small.svg" alt=""></a>
+                </div>
+                <div class="sidebar-col">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="spotify/img/home.svg" alt="Home">
+                                <span class="active">Home</span>
+                            </a>
+                        </li>
 
-            <div class="sidebar-col">
-                <ul>
-                    <li>
-                        <a class="active" href=""><i class="fa-solid fa-house"></i>Home</a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fa-solid fa-magnifying-glass"></i>Cerca</a>
-                    </li>
-                    <li>
-                        <a href=""><i class="fa-solid fa-lines-leaning"></i> La tua libreria</a>
-                    </li>
-                </ul>
-            </div>
+                        <li>
+                            <a href="">
+                                <img src="spotify/img/search.svg" alt="Search">
+                                <span>Search</span>
+                            </a>
+                        </li>
 
-            <div class="sidebar-col">
-                <h3>PLAYLIST</h3>
-                <ul>
-                    <li>
-                        <a href=""><i class="fa-solid fa-plus"></i>Crea Playlist</a>
-                    </li>
+                        <li>
+                            <a href="">
+                                <img src="spotify/img/libreria.svg" alt="Libreria">
+                                <span>La tua libreria</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-                    <li>
-                        <a href="">Nome Playlist</a>
-                    </li>
+                <div class="sidebar-col scroll none">
+                    <h3>PLAYLIST</h3>
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-solid fa-plus"></i>Crea Playlist</a>
+                        </li>
 
-                    <li>
-                        <a href="">Nome Playlist</a>
-                    </li>
+                        <li>
+                            <a href="">Nome Playlist</a>
+                        </li>
 
-                    <li>
-                        <a href="">Nome Playlist</a>
-                    </li>
+                        <li>
+                            <a href="">Nome Playlist</a>
+                        </li>
 
-                    <li>
-                        <a href="">Nome Playlist</a>
-                    </li>
+                        <li>
+                            <a href="">Nome Playlist</a>
+                        </li>
 
-                    <li>
-                        <a href="">Nome Playlist</a>
-                    </li>
+                        <li>
+                            <a href="">Nome Playlist</a>
+                        </li>
 
-                    <li>
-                        <a href="">Nome Playlist</a>
-                    </li>
+                        <li>
+                            <a href="">Nome Playlist</a>
+                        </li>
 
-                    <li>
-                        <a href="">Nome Playlist</a>
-                    </li>
-                </ul>
-            </div>
+                        <li>
+                            <a href="">Nome Playlist</a>
+                        </li>
 
-            <div class="sidebar-col bottom">
-                <i class="fa-regular fa-circle-down"></i> <span>Installa app</span>
-                <hr>
-                <i class="fa-regular fa-circle-user"></i> <strong class="active">John Doe</strong>
-            </div>
+                        <li>
+                            <a href="">Nome Playlist</a>
+                        </li>
+                    </ul>
+                </div>
+            
+                <div class="sidebar-col last">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="spotify/img/download.svg" alt="Home">
+                                <span class="none">Installa app</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="">
+                                <img class="rounded-border" src="spotify/img/profile.svg" alt="Search">
+                                <span class="active none">John Doe</span>
+                            </a>
+                        </li>
+                    </ul>    
+                </div>
+            </div> 
         </div>
 
+
+        <!-- main content -->
         <div id="main-content">
            <div class="fixed-div">
                 <a href="#">EFFETTUA L'UPGRADE</a>
@@ -90,7 +116,6 @@
                 <li>
                     <a href="#">IN EVIDENZA</a>
                     <div class="border-bt">
-                        
                     </div>
                 </li>
 
@@ -114,14 +139,21 @@
                     <a href="#">SCOPRI</a>
                 </li>
             </ul>
-
+            
             <div class="container">
                 <div class="title-section">
-                    <h2>Recently played</h2>
+                    <h3>Recently played</h3>
                 </div>
                 <div class="main-row">
                     <div class="col-6">
-                        <img src="spotify/img/metal_lifting.jpg" alt="anteprima">
+                        <div class="img-container">
+                            <img src="spotify/img/metal_lifting.jpg" alt="anteprima">
+                            <div class="overlay">
+                                <a href="">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </a>
+                            </div>
+                        </div>
                         <h3>Heavy Metal</h3>
                         <h5>Subtitle</h5>
                     </div>
@@ -132,29 +164,29 @@
                     </div>
                     <div class="col-6">
                         <img src="spotify/img/aquietplace.jpeg" alt="">
-                        <h3>Heavy Metal</h3>
+                        <h3>A quiet place</h3>
                         <h5>Subtitle</h5>
                     </div>
                     <div class="col-6">
                         <img src="spotify/img/split.jpeg" alt="">
-                        <h3>Heavy Metal</h3>
+                        <h3>Split</h3>
                         <h5>Subtitle</h5>
                     </div>
                     <div class="col-6">
                         <img src="spotify/img/cure.jpeg" alt="">
-                        <h3>Heavy Metal</h3>
+                        <h3>A cure for wellness</h3>
                         <h5>Subtitle</h5>
                     </div>
                     <div class="col-6">
                         <img src="spotify/img/sinister.jpeg" alt="">
-                        <h3>Heavy Metal</h3>
+                        <h3>Sinister</h3>
                         <h5>Subtitle</h5>
                     </div>
                 </div>
 
                 <!-- second row -->
                 <div class="title-section">
-                    <h2>Creato per John Doe</h2>
+                    <h3>Creato per John Doe</h3>
                     <h5>Pi&uacute; ascolti, pi&uacute; accurati saranno i suggerimenti</h5>
                 </div>
                
@@ -172,7 +204,7 @@
 
                 <!-- third row -->
                 <div class="title-section">
-                    <h2>Artisti pi&uacute; popolari</h2>
+                    <h3>Artisti pi&uacute; popolari</h2>
                     <h5>Pi&uacute; ascolti, pi&uacute; accurati saranno i suggerimenti</h5>
                 </div>
                
@@ -198,43 +230,43 @@
 
     <!-- lower part section -->
     <div id="lower-part">
-        <div class="col-3">
+        <div class="col-3 flex">
             <img src="spotify/img/sinister.jpeg" alt="preview">
             <div class="text">
                 <h5>Sinister</h5>
-                <h6>Brano nome</h>
+                <h6><a href="">Brano nome</a></h6>
             </div>
             <div class="col-3-icons">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-folder"></i>
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-regular fa-folder"></i></a>
             </div>
         </div>
 
         <div class="col-3-player">
             <div class="btn-player-icons mb-1">
-                <i class="fa-solid fa-shuffle"></i>
-                <i class="fa-solid fa-backward-step"></i>
-                <i class="fa-regular fa-circle-play"></i>
-                <i class="fa-solid fa-forward-step"></i>
-                <i class="fa-solid fa-arrow-rotate-right"></i>
+                <a href=""><i class="fa-solid fa-shuffle"></i></a>
+                <a href=""><i class="fa-solid fa-backward-step"></i></a>
+                <a href=""><i class="fa-regular fa-circle-play"></i></a>
+                <a href=""><i class="fa-solid fa-forward-step"></i></a>
+                <a href=""><i class="fa-solid fa-arrow-rotate-right"></i></a>
             </div>
 
-            <div class="bar-player flex">
-                <span>0.25</span>
-                <input class="width" type="range">
-                <span>4.35</span>
+            <div class="bar-player border flex justify-cont-cx">
+                
             </div>
         </div>
 
-        <div class="col-3">
+        <div class="col-3 flex justify-cont-fe">
             <div class="btn-player-icons">
-                <i class="fa-solid fa-list"></i>
-                <i class="fa-solid fa-display"></i>
-                <i class="fa-solid fa-volume-high"></i>  
-                <input type="range">
-            </div>      
+                <a href=""><i class="fa-solid fa-list"></i></a>
+                <a href=""><i class="fa-solid fa-display"></i></a>
+                <a href=""><i class="fa-solid fa-volume-high"></i></a> 
+            </div>
+            <div class="border-volume">
+                <input type="range" name="" id="">
+            </div>    
         </div>
     </div>
-
+    
 </body>
 </html>

@@ -1,3 +1,7 @@
-@media all and (mid-width: 878px){
-    
+@media all and (max-width: 878px){
+   .col-6{
+    width: calc(100% / 4);
+    margin-bottom: 2rem;
+   }
+
 }
