@@ -1,7 +1,15 @@
 @media all and (max-width: 878px){
+
+   /* main content */
    .col-6{
     width: calc(100% / 4);
     margin-bottom: 2rem;
    }
 
+
+   /* lower part */
+   .time-control input{
+      width: 15rem;
+      margin: 0 0.5rem 0.5rem;
+  }
 }

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/mediaquerytablet-md.css">
     <link rel="stylesheet" href="css/mediaquerysmartphone-s.css">
     <link rel="stylesheet" href="css/mediaquerysmalls-xs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Spotify Player</title>
 </head>
 <body>
@@ -24,22 +25,22 @@
                  <a class="hidden" href="#"><img src="spotify/img/logo-small.svg" alt=""></a>
                 </div>
                 <div class="sidebar-col">
-                    <ul>
-                        <li>
+                    <ul class="neg-margin">
+                        <li class="sidebar-border pd-lf-17">
                             <a href="">
                                 <img src="spotify/img/home.svg" alt="Home">
                                 <span class="active">Home</span>
                             </a>
                         </li>
 
-                        <li>
+                        <li class="pd-lf-20">
                             <a href="">
                                 <img src="spotify/img/search.svg" alt="Search">
                                 <span>Search</span>
                             </a>
                         </li>
 
-                        <li>
+                        <li class="pd-lf-20">
                             <a href="">
                                 <img src="spotify/img/libreria.svg" alt="Libreria">
                                 <span>La tua libreria</span>
@@ -48,9 +49,10 @@
                     </ul>
                 </div>
 
-                <div class="sidebar-col scroll none">
+                <div class="sidebar-col none">
                     <h3>PLAYLIST</h3>
-                    <ul>
+                    <div class="scroll">
+                        <ul>
                         <li>
                             <a href=""><i class="fa-solid fa-plus"></i>Crea Playlist</a>
                         </li>
@@ -83,13 +85,14 @@
                             <a href="">Nome Playlist</a>
                         </li>
                     </ul>
+                    </div>
                 </div>
             
                 <div class="sidebar-col last">
                     <ul>
                         <li>
                             <a href="">
-                                <img src="spotify/img/download.svg" alt="Home">
+                                <img class="download" src="spotify/img/download.svg" alt="Home">
                                 <span class="none">Installa app</span>
                             </a>
                         </li>
@@ -146,10 +149,10 @@
                 </div>
                 <div class="main-row">
                     <div class="col-6">
-                        <div class="img-container">
-                            <img src="spotify/img/metal_lifting.jpg" alt="anteprima">
+                        <div class="img-box-overlay">
+                            <img src="spotify/img/metal_lifting.jpg" alt="Anteprima" class="image">
                             <div class="overlay">
-                                <a href="">
+                                <a href="#" class="icon">
                                     <i class="fa-regular fa-circle-play"></i>
                                 </a>
                             </div>
@@ -157,28 +160,68 @@
                         <h3>Heavy Metal</h3>
                         <h5>Subtitle</h5>
                     </div>
+
                     <div class="col-6">
-                        <img src="spotify/img/stranger.jpeg" alt="">
-                        <h3>Stranger Thing, Vol.1 (a Netflix Original Series Soundtrack)</h3>
-                        <h5>Kyle Dixon & micheal Stein</h5>
+                        <div class="img-box-overlay">
+                            <img src="spotify/img/stranger.jpeg" alt="anteprima">
+                            <div class="overlay">
+                                <a href="#" class="icon">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3>Stranger Thing, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                        <h5>Kyle Dixon & Michael Stein</h5>
                     </div>
+
                     <div class="col-6">
-                        <img src="spotify/img/aquietplace.jpeg" alt="">
+                        <div class="img-box-overlay">
+                            <img src="spotify/img/aquietplace.jpeg" alt="anteprima">
+                            <div class="overlay">
+                                <a href="#" class="icon">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </a>
+                            </div>
+                        </div>
                         <h3>A quiet place</h3>
                         <h5>Subtitle</h5>
                     </div>
+
                     <div class="col-6">
-                        <img src="spotify/img/split.jpeg" alt="">
+                        <div class="img-box-overlay">
+                            <img src="spotify/img/split.jpeg" alt="anteprima">
+                            <div class="overlay">
+                                <a href="#" class="icon">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </a>
+                            </div>
+                        </div>
                         <h3>Split</h3>
                         <h5>Subtitle</h5>
                     </div>
+
                     <div class="col-6">
-                        <img src="spotify/img/cure.jpeg" alt="">
+                        <div class="img-box-overlay">
+                            <img src="spotify/img/cure.jpeg" alt="anteprima">
+                            <div class="overlay">
+                                <a href="#" class="icon">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </a>
+                            </div>
+                        </div>
                         <h3>A cure for wellness</h3>
                         <h5>Subtitle</h5>
                     </div>
+
                     <div class="col-6">
-                        <img src="spotify/img/sinister.jpeg" alt="">
+                        <div class="img-box-overlay">
+                            <img src="spotify/img/radar.jpeg" alt="anteprima">
+                            <div class="overlay">
+                                <a href="#" class="icon">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </a>
+                            </div>
+                        </div>
                         <h3>Sinister</h3>
                         <h5>Subtitle</h5>
                     </div>
@@ -192,34 +235,62 @@
                
                 <div class="main-row">
                     <div class="col-6">
-                        <img src="spotify/img/radar.jpeg" alt="">
+                        <div class="img-box-overlay">
+                            <img src="spotify/img/radar.jpeg" alt="anteprima">
+                            <div class="overlay">
+                                <a href="#" class="icon">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </a>
+                            </div>
+                        </div>
                         <h3>Release Radar</h3>
                     </div>
 
                     <div class="col-6">
-                        <img src="spotify/img/mixdaily.jpeg" alt="">
+                        <div class="img-box-overlay">
+                            <img src="spotify/img/mixdaily.jpeg" alt="anteprima">
+                            <div class="overlay">
+                                <a href="#" class="icon">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </a>
+                            </div>
+                        </div>
                         <h3>Daily Mix 1</h3>
                     </div>
                 </div>
 
                 <!-- third row -->
                 <div class="title-section">
-                    <h3>Artisti pi&uacute; popolari</h2>
+                    <h3>Artisti pi&uacute; popolari</h3>
                     <h5>Pi&uacute; ascolti, pi&uacute; accurati saranno i suggerimenti</h5>
                 </div>
                
                 <div class="main-row">
                     <div class="col-6">
                         <div class="rounded-img">
-                            <img src="spotify/img/youg.jpeg" alt="">
-                         </div>
+                            <div class="img-box-overlay ">
+                                <img src="spotify/img/youg.jpeg" alt="anteprima">
+                                <div class="overlay rounded-border">
+                                    <a href="#" class="icon">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                         <h3>Lana del Rey</h3>
                     </div>
 
                     <div class="col-6">
                         <div class="rounded-img">
-                            <img src="spotify/img/einaudi.jpeg" alt="">
-                         </div>
+                            <div class="img-box-overlay">
+                                <img src="spotify/img/einaudi.jpeg" alt="anteprima">
+                                <div class="overlay rounded-border">
+                                    <a href="#" class="icon">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                         <h3>Ludovico Einaudi</h3>
                     </div>
                 </div>
@@ -230,43 +301,45 @@
 
     <!-- lower part section -->
     <div id="lower-part">
-        <div class="col-3 flex">
-            <img src="spotify/img/sinister.jpeg" alt="preview">
-            <div class="text">
-                <h5>Sinister</h5>
-                <h6><a href="">Brano nome</a></h6>
+        <div class="lower-col flex justify-cont-fs">
+            <div class="img-cont-col">
+                <img src="spotify/img/sinister.jpeg" alt="">
             </div>
-            <div class="col-3-icons">
+            <div class="lower-text-cont-col">
+                <h5>Sinister</h5>
+                <h6>Brano nome</h6>
+            </div>
+            <div class="icons-cont-col-sx">
                 <a href=""><i class="fa-regular fa-heart"></i></a>
                 <a href=""><i class="fa-regular fa-folder"></i></a>
             </div>
         </div>
-
-        <div class="col-3-player">
-            <div class="btn-player-icons mb-1">
+        <div class="lower-col-cx">
+            <div class="icons-cont-col-cx flex justify-cont-cx">
                 <a href=""><i class="fa-solid fa-shuffle"></i></a>
                 <a href=""><i class="fa-solid fa-backward-step"></i></a>
                 <a href=""><i class="fa-regular fa-circle-play"></i></a>
                 <a href=""><i class="fa-solid fa-forward-step"></i></a>
                 <a href=""><i class="fa-solid fa-arrow-rotate-right"></i></a>
             </div>
-
-            <div class="bar-player border flex justify-cont-cx">
-                
+            <div class="time-control flex justify-cont-cx">
+                <span>0.25</span>
+                <input type="range">
+                <span>4.50</span>
             </div>
         </div>
-
-        <div class="col-3 flex justify-cont-fe">
-            <div class="btn-player-icons">
+        <div class="lower-col flex justify-cont-fe">
+            <div class="icons-cont-col-dx flex">
                 <a href=""><i class="fa-solid fa-list"></i></a>
                 <a href=""><i class="fa-solid fa-display"></i></a>
-                <a href=""><i class="fa-solid fa-volume-high"></i></a> 
+                <a href=""><i class="fa-solid fa-volume-high"></i></a>
+                <div class="sound-control" id="progressbar">
+                    <input type="range">
+                </div>
             </div>
-            <div class="border-volume">
-                <input type="range" name="" id="">
-            </div>    
         </div>
     </div>
+
     
 </body>
 </html>

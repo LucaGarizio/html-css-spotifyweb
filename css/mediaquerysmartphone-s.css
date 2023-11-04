@@ -1,9 +1,60 @@
 @media all and (max-width: 639px){
 
+    :root{
+        font-size: 1rem;
+    }
+    /*main content  */
+    #upper-part{
+     font-size: 12px;
+    }
+
+    .fixed-div a{
+        color: #ffffff;
+        border: 1px solid white;
+        padding: 0.8rem;
+        border-radius: 2rem;
+        text-decoration: none;
+        margin-right: 0.5rem;
+        width: 11rem;
+        text-align: center;
+    }
+
+    .border-bt{
+        margin-left: 1.3rem;
+        width: 2rem;
+        border-bottom: 3px solid #adff2f;
+    }
+
     .col-6{
         width: calc(100% / 2);
     }
 
-   
+
+
+
+    /* lower part */
+    .time-control input{
+        width: 9rem;
+        margin: 0 0.5rem 0.5rem;
+    }
+
+    .fa-list,
+    .fa-display,
+    .fa-volume-high{
+    padding: 0 0.4 0.4rem;
+
+    }
+
+   .lower-col-cx{
+    width: 42%;
+    }
+
+    .lower-col {
+    width: 29%;
+    }
+
+    .sound-control input {
+    width: 5rem;
+    }
 
 }
