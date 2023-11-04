@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-:root{
-    font-size: 1rem;
-}
-
 body{
     font-family: 'PT Sans', sans-serif;
     background-color: #333;
@@ -73,8 +69,8 @@ a:hover{
     overflow: auto;
 }
 
-.sidebar-col{
-    margin-bottom: 0.5rem;
+.top{
+    margin-bottom: 0.9rem;
     
 }
 
@@ -131,6 +127,7 @@ a:hover{
 
 hr{
     width: calc(100% - 1.5rem);
+    margin-top: -0.2rem;
 }
 
 .scroll{
@@ -138,6 +135,9 @@ hr{
     min-height: 2rem;
 }
 
+.user img{
+    width: 2rem;
+  }
 
 .last li:last-child{
     margin-top: 1rem;
@@ -152,9 +152,18 @@ hr{
     height: 100%;
 }
 
+.last .download{
+    /* margin-left: -0.2rem; */
+    width: 1.2rem;
+}
 
-.last img{
-    font-size: 10rem;
+.last span{
+    margin-right: 0.7rem;
+    font-size: 0.8rem;
+}
+
+.last .active{
+    font-size: 1rem;
 }
 
 .sidebar-col .active{
@@ -182,11 +191,11 @@ hr{
 .fixed-div a{
     color: #eee;
     border: 1px solid white;
-    padding: 0.8rem;
+    padding: 0.5rem;
     border-radius: 2rem;
     text-decoration: none;
-    margin-right: 1rem;
-    width: 18rem;
+    margin-right: 0.5rem;
+    width: 15rem;
     text-align: center;
 }
 
@@ -212,26 +221,20 @@ hr{
     border-bottom: 3px solid #adff2f;
 }
 
-li{
-    font-weight: bold;
-}
 
 .container{
-    margin-top: 1rem;
-    border: 1px solid white;
+    margin: 1rem 1rem 0;
 }
 
 
 .title-section{
-    margin-left: 1.2rem;
     margin-bottom: 2rem;
     font-size: 1.4rem;
 }
 
-.container h3,
-.container h2{
-    margin-bottom: 0.7rem;
-    color: white;
+.container h3{
+    margin-bottom: 0.5rem;
+    color: #fff;
 }
 
 .container h5{
@@ -263,10 +266,6 @@ li{
     border-radius: 50%;
 }
 
-.col-6 h6{
-    margin-top: 50px;
-    color: #65686d;
-}
 
 /* lower-part */
 
@@ -285,7 +284,6 @@ li{
 
 
 .lower-col{
-    border: 1px solid black;
     width: 25%;
     padding: 0 0.5rem;
 }
@@ -293,6 +291,19 @@ li{
 /* col-sx */
 .justify-cont-fe{
     justify-content: flex-end;
+}
+
+.artist{
+    color: #fff;
+}
+
+.track{
+    color: #6b6b6b;
+}
+
+.track h6:hover{
+    color: #fff;
+    cursor: pointer;
 }
 
 .img-cont-col img{
@@ -305,12 +316,12 @@ li{
 
 .lower-col-cx{
     width: 50%;
-   padding-top: 1rem;
+   padding-top: 1.5rem;
 }
 
 
 .fa-heart{
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 
 .icons-cont-col-sx,
@@ -336,11 +347,11 @@ li{
 
 .time-control input{
     width: 25rem;
-    margin: 0 0.5rem 0.5rem;
+    margin: 0 0.5rem 1.5rem;
 }
 
 .time-control span{
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.8rem;
     color: #fff;
 }
 
@@ -359,7 +370,7 @@ li{
 }
 
 
-/* hoverlay */
+/* overlay */
 .img-box-overlay {
     position: relative;
     width: 100%;
