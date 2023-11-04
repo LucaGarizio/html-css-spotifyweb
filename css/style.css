@@ -23,10 +23,16 @@ a:hover{
     color: white;
 }
 
+
+
 /* macroarea */
 #upper-part{
     height: calc(100vh - 5rem);
     display: flex;
+}
+
+#upper-part h3{
+    color: #ffffff;
 }
 
 #side-bar{
@@ -35,7 +41,6 @@ a:hover{
     background-color: #000000;
     
 }
-
 
 #main-content{
     height: 100%;
@@ -78,11 +83,11 @@ a:hover{
     margin-left: -23px;
 }
 
-.pd-lf-17{
+.pl-17{
     padding-left: 17px;
 }
 
-.pd-lf-20{
+.pl-20{
     padding-left: 20px;
 }
 
@@ -97,7 +102,7 @@ a:hover{
 }
 
 .sidebar-col h3{
-    color: #ffffff;
+    font-size: 0.9rem;
 }
 
 .sidebar-col span{
@@ -229,12 +234,12 @@ hr{
 
 .title-section{
     margin-bottom: 2rem;
+    margin-left: 0.5rem;
     font-size: 1.4rem;
 }
 
 .container h3{
     margin-bottom: 0.5rem;
-    color: #fff;
 }
 
 .container h5{
