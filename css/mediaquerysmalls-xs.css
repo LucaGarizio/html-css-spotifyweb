@@ -17,15 +17,17 @@
     .hidden{
         display: block;
         width: 2rem;
+        margin-left: -0.1rem;
     }
 
     .top img {
         width: 2rem;
-        margin-left: 0.2rem;
       }
 
     .logo{
+        width: 0;
         margin-bottom: 0rem;
+        margin-left: 0rem;
     }
 
     .last .download{
