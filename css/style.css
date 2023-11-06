@@ -488,7 +488,7 @@ input[type=range]:hover::-webkit-slider-runnable-track {
 
 /* animation */
 .icon :hover{
-    animation: spin-color 2s linear;
+    animation: spin-color 1s linear;
 }
 
 @keyframes spin-color{

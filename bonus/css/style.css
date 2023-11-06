@@ -7,7 +7,7 @@
 
 body{
     font-family: 'PT Sans', sans-serif;
-    background-color: #333;
+    background-color: #000000;
 } 
 
 ul{
@@ -194,6 +194,7 @@ hr{
     width: calc(100% - 15rem); 
     background-color: #080b12;
     opacity: 0.6; 
+    
 } 
 
 .fixed-div a{
@@ -205,9 +206,8 @@ hr{
     margin-right: 1rem;
     width: 15rem;
     text-align: center;
-    
+    animation: slide-dx 1.5s linear;
 }
-
 
 .fixed-div a:hover{
     font-size: 1.1rem;
@@ -221,7 +221,6 @@ hr{
     justify-content: center;
 }
 
-
 .choices li{
     margin: 0 0.9rem 2rem;
 }
@@ -232,16 +231,15 @@ hr{
     border-bottom: 3px solid #1DB954;
 }
 
-
 .container{
     margin: 1rem 1rem 0;
 }
-
 
 .title-section{
     margin-bottom: 2rem;
     margin-left: 0.5rem;
     font-size: 1.4rem;
+    animation: slide-sx 1.5s linear;
 }
 
 .container h3{
@@ -263,6 +261,7 @@ hr{
     width:calc(100% / 6);
     padding: 0 0.5rem;
     text-align: center;
+    animation: expansion 1s linear;
 }
 
 .col-6 img{
@@ -279,7 +278,6 @@ hr{
 
 
 /* lower-part */
-
 .flex{
     display: flex;
     align-items: center;
@@ -495,15 +493,13 @@ input[type=range]:hover::-webkit-slider-runnable-track {
 
 /* animation */
 .icon :hover{
-    animation: spin-color 2s linear;
+    animation: spin-color 1s linear;
 }
 
 @keyframes spin-color{
     0%{
         color: #fff;
         transform: rotate(0deg);
-        
-
     }
 
     25%{
@@ -512,13 +508,11 @@ input[type=range]:hover::-webkit-slider-runnable-track {
         font-size: ;
     }
 
-
     50%{
         color: green;
         transform: rotate(180deg);
         font-size: 50%;
     }
-
 
     75%{
         color: blue;
@@ -534,4 +528,27 @@ input[type=range]:hover::-webkit-slider-runnable-track {
 }
 
 
+@keyframes slide-sx{
+    from {
+        margin-left: 100%;
+        width: 100%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+}
+
+@keyframes slide-dx{
+    from {
+        margin-left: 0%;
+        width: 100%;
+      }
+    
+    to {
+        margin-left: 82%;
+        width: 100%;
+      }
+}
 
