@@ -418,7 +418,7 @@ hr{
 
 
 .icon {
-    color: white;
+    color: ddd;
     font-size: 3rem;
     position: absolute;
     top: 50%;
@@ -426,15 +426,13 @@ hr{
     transform: translate(-50%, -50%);
 }
 
-.fa-regular:hover {
-    color: #eee;
-}
 
 .fa-regular .fa-circle.play:hover {
     opacity: 1;
+    color: #eee;
 }
 
-
+/* stile input Firefox */
 input[type=range]::-moz-range-track {
     height: 0.4rem;
     background: #ddd;
@@ -447,18 +445,17 @@ input[type=range]::-moz-range-thumb {
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: grey;
+    background: lightgray;
     cursor: pointer;
 }
 
+input[type="range"]::-moz-range-progress {
+    background-color: green;
+    height: 0.4rem;
+    border-radius: 30%
+}    
 
-
-input[type=range]:focus::-moz-range-track {
-    background: #ddd;
-}
-
-
-
+/* bonus */
 @media all and (max-height: 250px){
     .fixed-div{
         display: none;
@@ -469,3 +466,4 @@ input[type=range]:focus::-moz-range-track {
         margin-top: 2rem;
     }
 }
+

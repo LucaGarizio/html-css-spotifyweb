@@ -55,10 +55,6 @@
    
       
     /* lower part */
-    .img-cont-col{
-        display: none;
-    }
-
     .icons-cont-col-cx .fa-shuffle,
     .fa-backward-step,
     .fa-regular.fa-circle-play,
@@ -84,5 +80,10 @@
 
     .img-cont-col img{
         width: 2.2rem;
+    }
+
+    /* bonus */
+    .img-cont-col{
+        display: none;
     }
 }
