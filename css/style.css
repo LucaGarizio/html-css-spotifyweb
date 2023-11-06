@@ -43,6 +43,7 @@ a:hover{
 }
 
 #main-content{
+    min-height: 400px;
     height: 100%;
     width: calc(100% - 15rem);
     background-color: #141922;
