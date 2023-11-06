@@ -72,17 +72,15 @@
         margin-left: 0;
     }
    
-    .fa-list,
-    .fa-display,
-    .fa-volume-high{
-        padding: 0 0.3rem 0.4rem;
-    }
 
     .img-cont-col img{
         width: 2.2rem;
     }
+}
 
-    /* bonus */
+/* bonus */
+
+@media  all and (max-width:552px){
     .img-cont-col{
         display: none;
     }

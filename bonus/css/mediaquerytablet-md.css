@@ -1,0 +1,24 @@
+@media all and (max-width: 878px){
+
+   /* main content */
+   .col-6{
+    width: calc(100% / 4);
+    margin-bottom: 2rem;
+   }
+
+   .col-6 h3{
+      font-size: 1.1rem;
+  }
+
+
+   /* lower part */
+   .time-control input{
+      width: 15rem;
+  }
+
+  .fa-list,
+  .fa-display,
+  .fa-volume-high{
+      padding: 0 0.3rem;
+  }
+}

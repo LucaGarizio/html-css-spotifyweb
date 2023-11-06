@@ -1,0 +1,35 @@
+@media all and (max-width: 639px){
+
+    /*main content  */
+
+    .col-6 h3{
+        font-size: 1rem;
+    }
+
+    .choices{
+     font-size: 0.9rem;
+    }
+
+    .fixed-div a{
+        width: 14.5rem;
+    }
+
+    .border-bt{
+        margin-left: 1.8rem;
+    }
+
+    .col-6{
+        width: calc(100% / 2);
+    }
+
+    /* lower part */
+    .time-control input{
+        width: 9rem;
+    }
+
+
+    .sound-control input {
+    width: 5rem;
+    }
+
+}
