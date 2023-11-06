@@ -13,6 +13,12 @@
 
    /* lower part */
    .time-control input{
-      width: 17rem;
+      width: 15rem;
+  }
+
+  .fa-list,
+  .fa-display,
+  .fa-volume-high{
+      padding: 0 0.3rem 0.4rem;
   }
 }

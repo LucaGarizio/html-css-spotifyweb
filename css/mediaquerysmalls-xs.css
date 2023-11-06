@@ -17,15 +17,17 @@
     .hidden{
         display: block;
         width: 2rem;
+        margin-left: -0.1rem;
     }
 
     .top img {
         width: 2rem;
-        margin-left: 0.2rem;
       }
 
     .logo{
+        width: 0;
         margin-bottom: 0rem;
+        margin-left: 0rem;
     }
 
     .last .download{
@@ -53,6 +55,9 @@
    
       
     /* lower part */
+    .img-cont-col{
+        display: none;
+    }
 
     .icons-cont-col-cx .fa-shuffle,
     .fa-backward-step,
@@ -74,7 +79,7 @@
     .fa-list,
     .fa-display,
     .fa-volume-high{
-    padding: 0 0.3rem 0.4rem;
+        padding: 0 0.3rem 0.4rem;
     }
 
     .img-cont-col img{
